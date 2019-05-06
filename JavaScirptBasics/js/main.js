@@ -47,9 +47,19 @@ console.log(price * 170);
 //
 // console.log(price);
 
-データ型
-console.log(typeof "hello");
-console.log(typeof 5);
-console.log(typeof true);
-console.log(typeof undefined);
-console.log(typeof null);
+// データ型
+// console.log(typeof "hello");
+// console.log(typeof 5);
+// console.log(typeof true);
+// console.log(typeof undefined);
+// console.log(typeof null);
+
+// if文
+const score = 40;
+if (score >= 80) {
+  console.log("Great!");
+} else if (score >= 60) {
+  console.log("Good!");
+} else {
+  console.log("OK...!");
+}
