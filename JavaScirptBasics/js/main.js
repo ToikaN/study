@@ -2,14 +2,10 @@
 
 {
   const a = [1, 5 ,10]
-  
-  a.unshift(100); //先頭に追加
-  a.push(200, 300); //末尾に追加
+  a.splice(2, 0, 6, 7);
+  console.log(a); //1,5,6,7,10
 
-  console.log(a);
-
-  a.shift(); //先頭から要素を削除
-  a.pop(); //末尾から要素を削除
-
-  console.log(a);
+  const removed = a.splice(1,2);
+  console.log(a); //1,7,10
+  console.log(removed);
 }
