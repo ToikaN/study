@@ -40,9 +40,16 @@ console.log(price * 170);
 // console.log(price * 150);
 // console.log(price * 170);
 
-let price = 500;
+// let price = 500;
+//
+// price += 100; //price = price + 100;
+// price++; //price += 1;
+//
+// console.log(price);
 
-price += 100; //price = price + 100;
-price++; //price += 1;
-
-console.log(price);
+データ型
+console.log(typeof "hello");
+console.log(typeof 5);
+console.log(typeof true);
+console.log(typeof undefined);
+console.log(typeof null);
