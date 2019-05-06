@@ -5,24 +5,16 @@
   'use strict';
 
 {
-  // Date
+  const d = new Date(2018, 11); // 2018/12/01 00:00:00
+  d.setHours(10, 20, 30); // 2018/12/01 10:20:30
+  d.setDate(32); // 2019/01/01 10:20:30
+  d.setDate(d.getDate() + 3); // 2019/01/04 10:20:30
 
-  const d = new Date();
   console.log(d);
 
-  console.log(d.getFullYear());
-  console.log(d.getMonth()); // 0 - 11
-  console.log(d.getDate());
-  console.log(d.getDay()); // 0 - 6
-  console.log(d.getHours());
-  console.log(d.getMinutes());
-  console.log(d.getSeconds());
-  console.log(d.getMilliseconds());
-
-  console.log(d.getTime()); // UTC 1970/01/01 00:00:00
-
-
-
+  const d1 = new Date(2018, 11, 1);
+  const d2 = new Date(2018, 11, 10);
+  console.log((d2 - d1) / (24 * 60 * 60 * 1000));
 }
 
 
