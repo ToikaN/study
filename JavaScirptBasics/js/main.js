@@ -99,3 +99,12 @@ console.log(price * 170);
 //    console.log("wrong signal!");
 //    break;
 // }
+
+//while文
+
+let hp = 200;
+
+while (hp > 0) {
+  console.log(`${hp} HP left!`);
+  hp -= 15;
+}
