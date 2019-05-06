@@ -55,7 +55,7 @@ console.log(price * 170);
 // console.log(typeof null);
 
 // if文
-const score = 40;
+// const score = 40;
 
 // if (score >= 80) {
 //   console.log("Great!");
@@ -66,4 +66,17 @@ const score = 40;
 // }
 
 // 条件式 ? trueの処理 : falseの処理
-score >= 60 ? console.log("Great!") : console.log("OK...!");
+// score >= 60 ? console.log("Great!") : console.log("OK...!");
+
+const score = 60;
+const name = "taguchi";
+
+if (score >= 50) {
+  if (name == "taguchi") {
+    console.log("Good job!");
+  }
+}
+
+if (score >= 50 && name == "taguchi") {
+  console.log("Good job!");
+}
