@@ -56,10 +56,14 @@ console.log(price * 170);
 
 // if文
 const score = 40;
-if (score >= 80) {
-  console.log("Great!");
-} else if (score >= 60) {
-  console.log("Good!");
-} else {
-  console.log("OK...!");
-}
+
+// if (score >= 80) {
+//   console.log("Great!");
+// } else if (score >= 60) {
+//   console.log("Good!");
+// } else {
+//   console.log("OK...!");
+// }
+
+// 条件式 ? trueの処理 : falseの処理
+score >= 60 ? console.log("Great!") : console.log("OK...!");
