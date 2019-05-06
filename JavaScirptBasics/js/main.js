@@ -5,18 +5,25 @@
   'use strict';
 
 {
-  let i = 0;
+  // const a = 'hello';
+  const a = 5;
+  const b = 'hello';
 
-  const showTime = () => {
-    console.log(new Date());
-    let timerId = setTimeout(showTime, 1000);
-    i++;
-    if (i > 2) {
-      clearTimeout(timerId);
-    }
-  };
+  try {
+    console.log(a.toUpperCase());
+  } catch (e) {
+    console.log(e.message);
+    console.log(e);
+  }
+  
+  try {
+    console.log(b.toUpperCase());
+  } catch (e) {
+    console.log(e.message);
+    console.log(e);
+  }
 
-  showTime();
+  console.log('Finish!');
 }
 
 
