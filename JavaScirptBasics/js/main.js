@@ -5,12 +5,17 @@
   'use strict';
 
 {
-  window.alert('hello');
-  alert('hello hello');
+  let i = 0;
 
-  const answer = confirm('Are you sure?');
-  console.log(answer);
+  const showTime = () => {
+    console.log(new Date());
+    i++;
+    if (i > 2) {
+      clearInterval(timerId);
+    }
+  };
 
+  let timerId = setInterval(showTime, 1000);
 }
 
 
