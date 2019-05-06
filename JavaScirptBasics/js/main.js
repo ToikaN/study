@@ -1,17 +1,12 @@
 'use strict';
 
 {
-  // 配列
+  // オブジェクト
 
-  const scores = [80, 90, 40]
-  console.log(scores[1]);
+  const player = {
+    name: "taguchi",
+    score: 32,  //最後の行に,を付けとくと行の入れ替えや追加が楽
+  };
 
-  scores[2] = 100;
-  console.log(scores);
-
-  console.log(scores.length);
-
-  // constは再代入ができない
-  // しかし定義されたものが配列やオブジェクトなら
-  // 中身の変更をすることができる
+  console.log(player);
 }
