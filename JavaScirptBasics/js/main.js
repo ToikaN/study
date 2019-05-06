@@ -102,9 +102,20 @@ console.log(price * 170);
 
 //while文
 
-let hp = 200;
+// let hp = 200;
+//
+// while (hp > 0) {
+//   console.log(`${hp} HP left!`);
+//   hp -= 15;
+// }
 
-while (hp > 0) {
-  console.log(`${hp} HP left!`);
-  hp -= 15;
+let i = 10;
+while ( i > 0) {
+  // if (i == 4) {
+  if (i % 3 == 0) {
+    i--;
+    continue;
+  }
+  console.log(i);
+  i--;
 }
