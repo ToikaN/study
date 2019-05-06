@@ -135,13 +135,23 @@ console.log(price * 170);
 // console.log("Rich is great!");
 // showAd("Fooder AD");
 
-function sum(a, b, c) {
-  // console.log(a + b + c);
-  return a + b + c
-}
 
-// sum(1, 2, 3);
-// sum(3, 4, 5);
+// function sum(a, b, c) {
+//   // console.log(a + b + c);
+//   return a + b + c
+// }
+//
+// // sum(1, 2, 3);
+// // sum(3, 4, 5);
+// const total = sum(1, 2, 3) + sum(3, 4, 5);
+//
+// console.log(total);
+
+//関数式
+function sum(a, b, c) {
+  return a + b + c
+};
+
 const total = sum(1, 2, 3) + sum(3, 4, 5);
 
 console.log(total);
