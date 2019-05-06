@@ -109,13 +109,28 @@ console.log(price * 170);
 //   hp -= 15;
 // }
 
-let i = 10;
-while ( i > 0) {
-  // if (i == 4) {
-  if (i % 3 == 0) {
-    i--;
-    continue;
-  }
-  console.log(i);
-  i--;
+// let i = 10;
+// while ( i > 0) {
+//   // if (i == 4) {
+//   if (i % 3 == 0) {
+//     i--;
+//     continue;
+//   }
+//   console.log(i);
+//   i--;
+// }
+
+//関数
+function showAd(){
+  console.log("--------");
+  console.log("---AD---");
+  console.log("--------");
 }
+
+showAd();
+console.log("Tom is great!");
+console.log("Bob is great!");
+showAd();
+console.log("Steve is great!");
+console.log("Rich is great!");
+showAd();
