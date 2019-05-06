@@ -2,12 +2,23 @@
 
 {
 
-  const a = [10, 20];
-  const b = [1, 2 ,...a];
-  console.log(b);
-  a[0] = 100;
-  console.log(b);
+  'use strict';
 
-  const sum = (a, b) => a + b;
-  console.log(sum(...a));
+{
+  // Math
+
+  // console.log(Math.PI);
+
+  // console.log(Math.random()); // 0 ... 0.99999
+
+  // Math.random() -> 0 ... 0.99999
+  // Math.random() * 6 -> 0 ... 5.99999
+  // Math.random() * 6 + 1 -> 1 ... 6.99999
+  // Math.floor(Math.random() * 6 + 1) -> 1 ... 6
+
+  console.log(Math.floor(Math.random() * 6 + 1));
+
+}
+
+
 }
