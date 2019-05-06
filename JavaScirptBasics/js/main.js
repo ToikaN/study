@@ -68,15 +68,34 @@ console.log(price * 170);
 // 条件式 ? trueの処理 : falseの処理
 // score >= 60 ? console.log("Great!") : console.log("OK...!");
 
-const score = 60;
-const name = "taguchi";
+// const score = 60;
+// const name = "taguchi";
+//
+// if (score >= 50) {
+//   if (name == "taguchi") {
+//     console.log("Good job!");
+//   }
+// }
+//
+// if (score >= 50 && name == "taguchi") {
+//   console.log("Good job!");
+// }
 
-if (score >= 50) {
-  if (name == "taguchi") {
-    console.log("Good job!");
-  }
-}
-
-if (score >= 50 && name == "taguchi") {
-  console.log("Good job!");
-}
+//条件分岐
+// const signal = "pink";
+//
+// switch (signal) {
+//   case "red":
+//     console.log("stop!");
+//     break;
+//   case "yellow":
+//     console.log("caution!");
+//     break;
+//   case "blue":
+//   case "green": //blueもしくはgreenという書き方
+//     console.log("go!");
+//     break;
+//   default: //どれにも当てはまらない
+//    console.log("wrong signal!");
+//    break;
+// }
