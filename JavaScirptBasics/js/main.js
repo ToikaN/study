@@ -166,5 +166,16 @@ console.log(price * 170);
 //
 // console.log(total);
 
-const double = a => a * 2; //変数1文字ならこのように書くことができる
-console.log(double(12));
+// const double = a => a * 2; //変数1文字ならこのように書くことができる
+// console.log(double(12));
+
+
+//scope
+
+// function f() {
+//   const x = 1;
+//   console.log(x);
+// }
+//
+// f();
+// console.log(x); //　エラーになる。関数内で定義されてるから外には持ち出せない
