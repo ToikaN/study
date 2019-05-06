@@ -39,3 +39,10 @@ console.log(price * 170);
 // price = 140;
 // console.log(price * 150);
 // console.log(price * 170);
+
+let price = 500;
+
+price += 100; //price = price + 100;
+price++; //price += 1;
+
+console.log(price);
