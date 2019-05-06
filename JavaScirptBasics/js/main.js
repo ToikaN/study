@@ -2,16 +2,12 @@
 
 {
 
-  const o = {
-    a: 1,
-    b: 2,
-  };
+  const a = [10, 20];
+  const b = [1, 2 ,...a];
+  console.log(b);
+  a[0] = 100;
+  console.log(b);
 
-  console.log(Object.keys(o));
-  console.log(Object.values(o));
-  console.log(Object.entries(o));
-
-  Object.keys(o).forEach(key => {
-    console.log(`${key}: ${o[key]}`);
-  });
+  const sum = (a, b) => a + b;
+  console.log(sum(...a));
 }
