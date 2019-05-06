@@ -20,9 +20,22 @@ console.log((2 + 10) * 3);
 */
 
 /*
-定数
+定数 const
+constで宣言された文字は再代入できない
+
 const price = 150;
 
 console.log(price * 150);
 console.log(price * 170);
 */
+
+// 変数 let (var)
+// ころころ変わると分かりずらいので基本はconstで宣言する
+
+// let price = 150;
+// console.log(price * 150);
+// console.log(price * 170);
+//
+// price = 140;
+// console.log(price * 150);
+// console.log(price * 170);
