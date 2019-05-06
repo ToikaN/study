@@ -121,16 +121,27 @@ console.log(price * 170);
 // }
 
 //関数
-function showAd(message = "AD"){ //仮引数
-  console.log("--------");
-  console.log(`---${message}---`);
-  console.log("--------");
+// function showAd(message = "AD"){ //仮引数
+//   console.log("--------");
+//   console.log(`---${message}---`);
+//   console.log("--------");
+// }
+//
+// showAd("Header AD"); //実引数
+// console.log("Tom is great!");
+// console.log("Bob is great!");
+// showAd();
+// console.log("Steve is great!");
+// console.log("Rich is great!");
+// showAd("Fooder AD");
+
+function sum(a, b, c) {
+  // console.log(a + b + c);
+  return a + b + c
 }
 
-showAd("Header AD"); //実引数
-console.log("Tom is great!");
-console.log("Bob is great!");
-showAd();
-console.log("Steve is great!");
-console.log("Rich is great!");
-showAd("Fooder AD");
+// sum(1, 2, 3);
+// sum(3, 4, 5);
+const total = sum(1, 2, 3) + sum(3, 4, 5);
+
+console.log(total);
