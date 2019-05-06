@@ -1,32 +1,15 @@
 'use strict';
 
 {
-  // クラス
+  const a = [1, 5 ,10]
+  
+  a.unshift(100); //先頭に追加
+  a.push(200, 300); //末尾に追加
 
-  class Player { //親クラス
-    constructor(name, score) { //メソッド
-      this.name = name;
-      this.score = score;
-    }
+  console.log(a);
 
-    showInfo() {
-      console.log(`name: ${this.name} score: ${this.score}`);
-    }
-  }
+  a.shift(); //先頭から要素を削除
+  a.pop(); //末尾から要素を削除
 
-  class SoccerPlayer extends Player { //子クラス
-    constructor(name, score, number){
-      super(name, score);
-      this.number = number;
-    }
-    kick() {
-      console.log('Gooooooooooaaaaaaaal!');
-    }
-  }
-
-  const tsubasa = new SoccerPlayer('tsubasa' ,99, 10);
-
-  tsubasa.kick();
-  console.log(tsubasa.number);
-  tsubasa.showInfo();
+  console.log(a);
 }
