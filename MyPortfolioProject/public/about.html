@@ -2,6 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
+  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
   <title>山田太郎について</title>
   <link rel="icon" href="favicon.ico">
   <meta name="description" content="山田太郎について。">
@@ -58,6 +59,35 @@
    </ul>
    <p>(c) Taro Yamada</p>
  </footer>
+
+ <div id="back-to-top" style="position:fixed;right:5px;bottom:5px"><a href="#"><img src="img/back-to.png"></a></div>
+<dvi id="pos" style="position: fixed; left: 5px; bottom: 5px"></dvi>
+<script>
+$(function() {
+  //#back-to-topを消す
+  $('#back-to-top').hide();
+
+  //スクロールが十分にされたら#back-to-topを表示、スクロールが戻ったら非表示
+  $(window).scroll(function() {
+    $('#pos').text($(this).scrollTop());
+    if ($(this).scrollTop() > 60) {
+      $('#back-to-top').fadeIn();
+    } else {
+      $('#back-to-top').fadeOut();
+    }
+  });
+
+  // #back-to-topがクリックされたら上に戻る
+  $('#back-to-top a').click(function() {
+    $('html, body').animate({
+      scrollTop:0
+    }, 500);
+    return false;
+   });
+});
+
+
+ </script>
 
 </body>
 </html>

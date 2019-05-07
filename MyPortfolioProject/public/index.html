@@ -80,7 +80,7 @@
    <p>(c) Taro Yamada</p>
  </footer>
 
- <div id="back-to-top" style="position:fixed;right:5px;bottom:5px"><a href="#">↑</a></div>
+ <div id="back-to-top" style="position:fixed;right:5px;bottom:5px"><a href="#"><img src="img/back-to.png"></a></div>
 <dvi id="pos" style="position: fixed; left: 5px; bottom: 5px"></dvi>
 <script>
 $(function() {
@@ -98,6 +98,12 @@ $(function() {
   });
 
   // #back-to-topがクリックされたら上に戻る
+  $('#back-to-top a').click(function() {
+    $('html, body').animate({
+      scrollTop:0
+    }, 500);
+    return false;
+   });
 });
 
 
