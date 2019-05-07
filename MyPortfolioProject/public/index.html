@@ -78,8 +78,22 @@
    </ul>
    <p>(c) Taro Yamada</p>
  </footer>
- <script>
 
+ <div id="back-to-top"><a href="#">↑</a></div>
+ <script>
+ $(function() {
+     // #back-to-topを消す
+     $('#back-to-top').hide();
+
+     // スクロールが十分されたら#back-to-topを表示、スクロールが戻ったら非表示
+     $(window).scroll(function() {
+
+     });
+
+     // #back-to-topがクリックされたら上に戻る
+
+ });
  </script>
+ 
 </body>
 </html>
