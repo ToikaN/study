@@ -5,8 +5,13 @@
   var stop = document.getElementById('stop');
   var result = document.getElementById('result');
   var startTime;
+  var isStarted = false;
 
   start.addEventListener('click', function() {
+    if (isStarted === true) {
+      return;
+    }
+    isStarted = true;
     startTime = Date.now();
     this.className = 'pushed';
     stop.className = '';
@@ -15,6 +20,10 @@
   stop.addEventListener('click', function() {
     var elapsedTime;
     var diff;
+    if (isStarted === false) {
+      return;
+    }
+    isStarted = false;
     elapsedTime = (Date.now() - startTime) / 1000;
     // elapsedTime = 4; //確認用
     // result.textContent = elapsedTime; ↓で小数点以下の000を表す
