@@ -6,26 +6,18 @@
 </head>
 <body>
     <p>jQueryの練習</p>
-    <button>Add!</button>
 
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script>
         $(function() {
 
-            $('button').click(function() {
-                var p = $('<p>').text('vanish!').addClass('vanish');
-                $(this).before(p);
-            });
+            // Ajax
+            // Asynchronous JavaScript + XML
+            // サーバーと通信 + ページの書き換え
+            // 非同期: 処理が終わる前に次の処理に移る
+           // $.post
+           // $.get
 
-            /*
-            $('.vanish').click(function() {
-                $(this).remove();
-            });
-            */
-
-            $('body').on('click', '.vanish', function() {
-                $(this).remove();
-            });
 
         });
     </script>
