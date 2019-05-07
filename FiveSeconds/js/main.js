@@ -15,6 +15,8 @@
     startTime = Date.now();
     this.className = 'pushed';
     stop.className = '';
+    result.textContent = '0.000';
+    result.className = 'standby';
   });
 
   stop.addEventListener('click', function() {
@@ -31,6 +33,7 @@
     this.className = 'pushed';
     start.className = '';
     diff = elapsedTime - 5.0;
+    result.className = '';
     // if (diff > -1.0 && diff < 1.0) {
     if (Math.abs(diff) < 1.0) { //Math.ads(diff)でdiffの絶対値をとる
       result.className = 'perfect';
